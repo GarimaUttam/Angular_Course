@@ -10,13 +10,17 @@ import { FormsModule } from '@angular/forms';
 export class RolesComponent {
   firstName: string = "Angular tutorial";
   angularVersion = "Version 19";
-
   version: number = 19;
-
   isactive : boolean = false;
-
   currentDate : Date = new Date();
-
   inputType: string = "button";
   selectedState: string ="";
+
+  // event binding
+  showWelcomeAlert() {
+    alert("Welcome Angular")
+  }
+  showMessage(message: string) {
+    alert(message)
+  }
 }
